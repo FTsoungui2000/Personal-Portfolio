@@ -8,20 +8,36 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo"></div>
-        <div class="links">
-        <a href="">About</a>
-        <a href="">Work</a>
-        <a href="">Contact</a>
-        <a href="">Resume</a>
+    <nav id="nav">
+        <div class="logo">Franck Tsoungui</div>
+        <div> 
+            <ul class="nav-links">
+                <li><a href="#about"></a>About</li>
+                <li><a href="#experience"></a>Experience</li>
+                <li><a href="#projects"></a>Projects</li>
+                <li><a href="#contact"></a>Contact</li>
+            </ul>
         </div>
     </nav>
 
-    <div class="name">
-        <h1>Franck Tsoungui</h1>
-    </div>
-
+    <nav id="hamburger-nav">
+        <div class="logo">Franck Tsoungui</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()"></a>About</li>
+                    <li><a href="#experience" onclick="toggleMenu()"></a>Experience</li>
+                    <li><a href="#projects" onclick="toggleMenu()"></a>Projects</li>
+                    <li><a href="#contact" onclick="toggleMenu()"></a>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <footer></footer>
     <script src="script.js"></script>
 </body>
